@@ -1,6 +1,10 @@
 # Preprocessing DES raw data 
 ## Preprocessing DES raw data for object detecting (deep learning -- tensorflow) 
 
+This preprocessing system extracts fits files from DES raw data with funpack, process CCDs data in parallel, divide each CCD into subimages, save fits and jpegs of them, run SExtractor upon them, and transform the data into tensorflow records for object detection.
+
+Automatic, parallelized, with configurable options, and logging feature through all stages.
+
 ## Setting up (Ubuntu)
 
 ### funpack
