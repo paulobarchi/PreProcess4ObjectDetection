@@ -92,11 +92,11 @@ Example of a line of the log file (first line):
 
 Ih the ***Image*** subsection, ***dpiw*** and ***dpih*** are not in use in this current version.
 
-***n_subImages***: in how many subimages should the original exposure be split (default empyrically set to 6 -- divide horizontally in two, then split each half in three).
-***percentile***: ***n***th percentile of the matrix data to be used as max value in normalization (default: 100).
-***ccdByNumOrName***: we can use CCDs names or numbers as suffix to output files (default: name).
-***maskBorder***: if not applying mask, how much (in pixels) should be cut from the image border (default: 180).
-***maskExtension***: if using mask files, what is the extension.
+* ***n_subImages***: in how many subimages should the original exposure be split (default empyrically set to 6 -- divide horizontally in two, then split each half in three).
+* ***percentile***: ***n***th percentile of the matrix data to be used as max value in normalization (default: 100).
+* ***ccdByNumOrName***: we can use CCDs names or numbers as suffix to output files (default: name).
+* ***maskBorder***: if not applying mask, how much (in pixels) should be cut from the image border (default: 180).
+* ***maskExtension***: if using mask files, what is the extension.
 
 ### [Operations]
 Define whether to run or not each operation in boolean values (***True*** or ***False***).
@@ -105,12 +105,12 @@ Define whether to run or not each operation in boolean values (***True*** or ***
 * ***createDataSets***: gather all csv files into one total csv file, and split it into training and test datasets.
 
 ### [Training]
-***parentDirWithCSVs***: directory with csv files or parent directory for which children directories have csv files.
-***totalFile***: csv file name with all information generated in one run (default: totalDF.csv). 
-***trainSizeFraction***: Fraction of total data to be used as training set (default: 0.9).
-***trainFile***: csv file name with training set (default: train.csv).
-***testFile***: csv file name with test set (default: test.csv).
-***labelMapFile***: file with label map information for tensorflow. Current file in use:
+* ***parentDirWithCSVs***: directory with csv files or parent directory for which children directories have csv files.
+* ***totalFile***: csv file name with all information generated in one run (default: totalDF.csv). 
+* ***trainSizeFraction***: Fraction of total data to be used as training set (default: 0.9).
+* ***trainFile***: csv file name with training set (default: train.csv).
+* ***testFile***: csv file name with test set (default: test.csv).
+* ***labelMapFile***: file with label map information for tensorflow. Current file in use:
 
 ```
 item {
