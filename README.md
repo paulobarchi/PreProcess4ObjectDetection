@@ -121,6 +121,8 @@ item {
 which means the object detector just has to identify one class: 'obj'.
 
 ## Running preprocessing
+Recommended: run ***subImages*** opeartion to all .fits.fz first; then run ***createDataSets***.
+
 ```bash
 python preprocess.py <configFile>
 ```
